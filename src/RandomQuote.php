@@ -1,10 +1,6 @@
 <?php
-/**
- * Description of Greeting
- * http://www.quotationspage.com/
- * @author cpaniba
- */
-class Greeting {
+
+trait RandomQuote {
     public $quotes = [
        "Love all, trust a few. Do wrong to none." ,
        "There cannot be a crisis next week. My schedule is already full." ,
@@ -15,9 +11,4 @@ class Greeting {
        "Cherish each hour of this day for it can never return." ,
        "It's kind of fun to do the impossible." 
     ];
-    public function say($name)
-    {
-      shuffle($this->quotes);  
-      echo 'Hi, '.$name. "! There is a new quote for you: ".$this->quotes[0];
-    }
 }

@@ -1,11 +1,11 @@
 <?php
-require_once 'Greeting.php';
-$trait = new Greeting;
-$trait->say("Dima");
+$loader = require __DIR__ . '/vendor/autoload.php';
+$greet = new Greeting;
+$greet->say("Dima");
 echo "<hr>";
-//$trait->say("Sasha");
+//$greet->say("Sasha");
 //echo "<hr>";
-//$trait->say("Gena");
+//$greet->say("Gena");
 //echo "<hr>";
-//$trait->say("Lesya");
+//$greet->say("Lesya");
 //echo "<hr>";
